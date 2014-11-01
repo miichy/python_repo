@@ -1,0 +1,9 @@
+(lp1
+S'one'
+p2
+aI2
+aS'four'
+p3
+aS'can you count?'
+p4
+a.
