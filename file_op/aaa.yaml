@@ -1,0 +1,81 @@
+templateName: "aaa_gzdx"
+
+version: "1.0"
+
+
+
+configurationsequence: 
+
+ - config.properties
+
+ - preconfig.properties
+
+ - specialConfig.properties
+
+
+
+config.properties:
+
+ - master.jdbc.username: "epg"
+
+   master.jdbc.password: "epg"
+
+   master.jdbc.url: "jdbc:mysql://127.0.0.1:3306/epg?useUnicode=true&characterEncoding=utf-8"
+
+   slave.jdbc.username: "epg"
+
+   slave.jdbc.password: "epg"
+
+   slave.jdbc.url: "jdbc:mysql://127.0.0.1:3306/epg?useUnicode=true&characterEncoding=utf-8"
+
+   epg.jdbc.username: "epg"
+
+   epg.jdbc.password: "epg"
+
+   epg.jdbc.url: "jdbc:mysql://127.0.0.1:3306/epg?useUnicode=true&characterEncoding=utf-8"
+
+   ucs.slave.jdbc.username: "epg"
+
+   ucs.slave.jdbc.password: "epg"
+
+   ucs.slave.jdbc.url: "jdbc:mysql://127.0.0.1:3306/epg?useUnicode=true&characterEncoding=utf-8"
+
+   log.file.dir: "d:/usr/"
+
+   sys.code: "test"
+
+   machineRoom.code: "LUJIAZUI"
+
+   partner.identify: "034"
+
+   host.id: "5"
+
+   isB2C: "false"
+
+
+
+preconfig.properties:
+
+ - partner.code: "GYTEL"
+
+   partner.auth.url: "http://localhost:8088/gzaaa/test/bmsAuthResponse.jsp"
+
+   partner.order.url: "http://localhost:8088/gzaaa/test/bmsOrderResponse.jsp"
+
+   partner.indexAuth.url: "http://localhost:8088/gzaaa/test/indexAuth.jsp"
+
+   bms.updatetoken.url: "http://localhost:8088/gzaaa/test/bmsUserTokenReturn.jsp"
+
+
+
+specialConfig.properties:
+
+ - log.file.dir: "/temp/logs/"
+
+   sys.code: "test"
+
+   logError.file.dir: "/temp/usr/"
+
+   logError.ftp.folder: "/"
+
+   machineRoom.code: "JIANGXIA"
