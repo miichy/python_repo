@@ -1,0 +1,22 @@
+name: autobuild
+version: 1.0
+ssh: 
+      keys: /usr/work/xxx.gem
+      user: bestadmin
+      rootpwd: fun@123
+base: 
+      - name: tomcat
+        url: http.....
+        dir: /data/tomcat
+      - name: jdk
+         url: http....
+         dir: /data/java
+service: 
+     - name: aaa
+       ip: "10.201.22.103,10.201.0.80"
+       port: 8080
+       war:  http://10.50.121.15/job/XXX /AAA_2.12.3_UNI_build20150611.war
+     - name: ps
+        ip: "10.201.0.80,10.201.22.103"
+        port: 8080
+        war: http://10.50.121.15/job/XXX/PS_3.2.2_UNI_build20150518.war
